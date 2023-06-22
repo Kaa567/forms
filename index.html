@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <title>Form</title>
+
+    <!-- Site desenvolvido no Senai com o professor Guilherme Moisés -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Cadastro</h1>
+        <p>Complete suas informações</p>
+        <hr>
+    </header>
+
+    <form action="">
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome"
+                autocomplete="off" required
+                placeholder="Digite aqui seu nome">
+                
+            </div>
+
+            <div>
+                <label for="email">E-mail
+                    <input type="email" id="email"
+                    placeholder="Digite aqui seu e-mail">
+                </label>
+            </div>
+
+            <h3>Tem mais de 18 anos?</h3>
+
+            <div>
+                <input type="checkbox" id="checkbox-item1">
+                <label for="checkbox-item1">Sim</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="checkbox-item2">
+                <label for="checkbox-item2">Não</label>
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10"
+            placeholder="Se não, digite sua idade"></textarea>
+
+            <div>
+                <h3>Estado de Nascimento:</h3>
+
+                <label for="">UF</label>
+                <select name="" id="select-item">
+                    <option selected disabled>Selecione</option>
+                    <option>Item 1</option>
+                    <option>Item 2</option>
+                    <option>Item 3</option>
+                    <option>Item 4</option>
+                    <option>Item 5</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Estado Civil:</legend>
+            <div>
+                <h3>Estado Civil:</h3>
+                
+                <br>
+                
+                <input type="radio" name="radio" id="radio-item1">
+                <label for="radio-item1">Casado(a)</label>
+                
+                <br>
+                
+                <input type="radio" name="radio" id="radio-item2" checked>
+                <label for="radio-item2">Solteiro(a)</label>
+                
+                <br>
+                
+                <input type="radio" name="radio" id="radio-item3">
+                <label for="radio-item3">Divorciado(a)</label>
+                
+                <br>
+                
+                <input type="radio" name="radio" id="radio-item4">
+                <label for="radio-item4">Viúvo(a)</label>
+                
+                <br>
+                
+                <input type="radio" name="radio" id="radio-item5">
+                <label for="radio-item5">Separado(a)</label>
+            </div>
+
+        </fieldset>
+
+        <div class="btn">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+            
+        </form>
+        
+</body>
+</html>
